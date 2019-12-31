@@ -15,14 +15,14 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 
 setup(
-    name='PyInvoice',
+    name='CustomPyInvoice',
     version='0.1.7',
     packages=['pyinvoice', 'tests'],
     include_package_data=True,
     license='MIT License',
     description='Invoice/Receipt generator',
     long_description=README,
-    url='https://github.com/CiCiApp/PyInvoice',
+    url='https://github.com/timsned/PyInvoice',
     author='zhangshine',
     author_email='zhangshine0125@gmail.com',
     install_requires=['reportlab'],
