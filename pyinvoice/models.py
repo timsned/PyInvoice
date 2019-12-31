@@ -111,7 +111,7 @@ class Item(object):
         :param description: Item detail
         :type description: str or unicode or int
         :param units: Amount
-        :type units: int or str or unicode
+        :type units: float
         :param unit_price: Unit price
         :type unit_price: Decimal or str or unicode or int or float
         :return:
@@ -123,7 +123,7 @@ class Item(object):
 
     @property
     def amount(self):
-        return int(self.units) * Decimal(str(self.unit_price))
+        return float(self.units) * Decimal(str(self.unit_price))
 
 
 class Transaction(object):
